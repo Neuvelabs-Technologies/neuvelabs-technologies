@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://neuvelabs.com/sitemap.xml
-
