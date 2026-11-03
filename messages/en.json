@@ -1,397 +1,266 @@
 {
   "meta": {
-    "title": "Neuve Labs Technology",
-    "description": "AI and IT consulting company delivering digital transformation solutions in UAE"
+    "title": "Neuve Labs",
+    "description": "Neuve Labs is an AI and IT consultancy in the UAE. We design, build and run software, cloud, data and AI systems for organizations across the Middle East, Asia, Europe and Australia."
   },
   "nav": {
-    "home": "Home",
-    "about": "About",
+    "primary": "Main navigation",
+    "home": "Neuve Labs home",
     "services": "Services",
+    "industries": "Industries",
     "insights": "Insights",
+    "about": "About",
     "contact": "Contact",
-    "digitalEngineering": "Digital Engineering",
-    "specialistServices": "Specialist Services",
-    "industries": "Industries"
-  },
-  "hero": {
-    "preTitle": "Welcome to Neuve Labs",
-    "title": "Technology that",
-    "titleHighlight": "drives results.",
-    "subtitle": "We build intelligent solutions that help businesses automate, scale, and compete in the digital economy.",
-    "scrollIndicator": "Explore our work",
-    "cta": "Get Started"
-  },
-  "challenge": {
-    "badge": "Industry Challenges",
-    "title": "The Challenges",
-    "subtitle": "Industries navigating digital transformation need proven partners",
-    "viewAll": "View all case studies"
-  },
-  "vision": {
-    "badge": "Our Services",
-    "title": "What We Do",
-    "subtitle": "End-to-end technology solutions tailored to your business needs",
-    "explore": "Learn more"
-  },
-  "proof": {
-    "badge": "Case Studies",
-    "title": "Our Work",
-    "subtitle": "Real results from real projects across industries",
-    "readMore": "Read full case study",
-    "metrics": {
-      "improvement": "improvement",
-      "reduction": "reduction",
-      "increase": "increase"
-    }
-  },
-  "contact": {
-    "badge": "Get in Touch",
-    "title": "Let's Talk",
-    "subtitle": "Ready to start your next project?",
-    "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "company": "Company",
-      "message": "How can we help?",
-      "submit": "Send Message",
-      "sending": "Sending...",
-      "success": "Message sent successfully",
-      "error": "Something went wrong. Please try again."
-    }
-  },
-  "footer": {
-    "tagline": "Technology that delivers.",
-    "copyright": "All rights reserved.",
-    "description": "AI and IT consulting company helping enterprises accelerate digital transformation through proven technology solutions.",
-    "services": {
-      "title": "Services",
-      "aiMl": "AI & Machine Learning",
-      "cloudDevops": "Cloud & DevOps",
-      "dataAnalytics": "Data Analytics",
-      "enterpriseSoftware": "Enterprise Software"
-    },
-    "company": {
-      "title": "Company",
-      "about": "About Us",
-      "industries": "Industries",
-      "insights": "Insights",
-      "contact": "Contact Us"
-    },
-    "newsletter": {
-      "title": "Stay Updated",
-      "description": "Subscribe to our newsletter for the latest insights and tech trends.",
-      "placeholder": "Enter your email",
-      "button": "Subscribe"
-    },
-    "contact": {
-      "email": "info@neuvelabs.com",
-      "location": "RAK Free Zone, United Arab Emirates"
-    },
-    "links": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "careers": "Careers"
-    }
-  },
-  "services": {
-    "aiEngineering": {
-      "title": "AI Engineering",
-      "description": "Custom AI and ML solutions from prototype to production deployment"
-    },
-    "cloudEngineering": {
-      "title": "Cloud Engineering",
-      "description": "Scalable cloud infrastructure, migration, and optimization services"
-    },
-    "dataEngineering": {
-      "title": "Data Engineering",
-      "description": "Build reliable data pipelines and analytics infrastructure"
-    },
-    "productEngineering": {
-      "title": "Product Engineering",
-      "description": "Full-stack development from concept to market-ready products"
-    },
-    "cyberSecurity": {
-      "title": "Cyber Security",
-      "description": "Security assessments, compliance, and threat protection solutions"
-    },
-    "processAutomation": {
-      "title": "Process Automation",
-      "description": "Streamline operations with intelligent workflow automation"
-    }
-  },
-  "industries": {
-    "retail": "Retail",
-    "finance": "Financial Services",
-    "healthcare": "Healthcare",
-    "transport": "Transport",
-    "manufacturing": "Manufacturing",
-    "energy": "Energy"
-  },
-  "common": {
-    "learnMore": "Learn more",
-    "viewAll": "View all",
-    "back": "Go back",
-    "loading": "Loading...",
-    "error": "Something went wrong"
-  },
-  "theme": {
-    "light": "Light mode",
-    "dark": "Dark mode",
-    "toggle": "Toggle theme"
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skip": "Skip to content",
+    "breadcrumb": "Breadcrumb"
   },
   "language": {
-    "switch": "Switch language",
-    "en": "English",
-    "ar": "العربية"
+    "label": "Change language",
+    "switchTo": "العربية",
+    "switchToCode": "ar"
+  },
+  "common": {
+    "viewAllServices": "View all services",
+    "viewAllWork": "View all work",
+    "readCaseStudy": "Read the case study",
+    "readArticle": "Read the article",
+    "startProject": "Start a project",
+    "seeWork": "See our work",
+    "getInTouch": "Get in touch",
+    "emailUs": "Email us",
+    "learnMore": "Learn more",
+    "caseStudy": "Case study",
+    "article": "Article"
+  },
+  "home": {
+    "hero": {
+      "headline": "We build the software, data and AI systems that businesses run on.",
+      "overview": [
+        "An AI and IT consultancy based in Ras Al Khaimah, United Arab Emirates.",
+        "Engineering teams in the UAE and India, working with clients across the Middle East, Asia, Europe and Australia.",
+        "Product, cloud, data, AI and security, from the first workshop to production support."
+      ]
+    },
+    "practices": {
+      "label": "What we do",
+      "title": "One engineering team, three ways to work with us.",
+      "digital": {
+        "title": "Digital Engineering",
+        "body": "Product, cloud, data and integration work, from the first release to long-term support.",
+        "cta": "Digital engineering"
+      },
+      "specialist": {
+        "title": "Specialist Services",
+        "body": "AI engineering, cyber security and process automation for regulated and high-volume operations.",
+        "cta": "Specialist services"
+      },
+      "industries": {
+        "title": "Industries",
+        "body": "Healthcare, finance, retail, manufacturing, real estate and education, each with its own constraints.",
+        "cta": "Industries"
+      }
+    },
+    "services": {
+      "title": "Services clients ask us for most."
+    },
+    "sectors": {
+      "label": "Sectors we have delivered in",
+      "items": ["Telecommunications", "Financial services", "Retail", "Healthcare", "Education", "Transport", "Manufacturing", "Real estate", "Community"]
+    },
+    "work": {
+      "label": "Selected work",
+      "title": "Recent projects, and what changed because of them."
+    },
+    "clients": {
+      "label": "Clients",
+      "title": "Organizations we have worked with."
+    },
+    "cta": {
+      "title": "Have a system that needs building, fixing or scaling?",
+      "body": "Tell us what you are working on. A senior engineer will read it and get back to you."
+    }
+  },
+  "servicesIndex": {
+    "label": "Services",
+    "title": "Engineering services, from strategy to support.",
+    "lede": "Fourteen services in two practices. Most engagements combine several, delivered by one accountable team."
+  },
+  "hubs": {
+    "digital": {
+      "label": "Digital Engineering",
+      "title": "Products and platforms, built to last.",
+      "lede": "We design, build and run the software your operations depend on: products, cloud platforms, data pipelines and the integrations between them."
+    },
+    "specialist": {
+      "label": "Specialist Services",
+      "title": "Focused expertise where the stakes are high.",
+      "lede": "AI, security and automation work for organizations with regulatory, scale or risk requirements that general delivery teams are not set up for.",
+      "why": {
+        "label": "Why us",
+        "title": "Local knowledge, international standards.",
+        "lede": "We know the UAE market and its regulators, and we apply international practice to every engagement.",
+        "items": [
+          {
+            "title": "Regulatory alignment",
+            "body": "Experience with UAE Central Bank, NESA and ADGM requirements, built into how we deliver."
+          },
+          {
+            "title": "Knowledge transfer",
+            "body": "We work alongside your team and leave capability behind, not just deliverables."
+          }
+        ],
+        "focusTitle": "Focus areas",
+        "focus": [
+          "AI-assisted process automation and analytics",
+          "Security assessments and compliance programs",
+          "Generative AI applications and assistants",
+          "Enterprise architecture and modernization",
+          "Cloud migration and DevOps"
+        ]
+      }
+    }
+  },
+  "serviceDetail": {
+    "capabilities": "What we do",
+    "outcomes": "What you get",
+    "useCases": "Where it is used",
+    "relatedWork": "Related work",
+    "otherServices": "Other services in this practice",
+    "ctaTitle": "Planning something in this area?",
+    "ctaBody": "Tell us about the problem. We will tell you honestly whether we are the right team for it."
+  },
+  "industriesIndex": {
+    "label": "Industries",
+    "title": "Sector knowledge that shortens the learning curve.",
+    "lede": "Every industry has its own regulations, legacy systems and ways of working. We bring what we have learned from delivering in each one."
+  },
+  "insightsIndex": {
+    "label": "Insights",
+    "title": "Case studies and notes from our engineers.",
+    "lede": "How we have approached real projects, and what we think about AI, cloud and data in practice.",
+    "caseStudies": "Case studies",
+    "articles": "Articles"
+  },
+  "caseStudy": {
+    "back": "All insights",
+    "industry": "Industry",
+    "published": "Published",
+    "stack": "Stack",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "keyFeatures": "What we built",
+    "results": "Results",
+    "ctaTitle": "Facing a similar problem?",
+    "ctaBody": "We would be glad to hear about it and share what worked here."
+  },
+  "article": {
+    "back": "All insights",
+    "published": "Published",
+    "topic": "Topic",
+    "ctaTitle": "Want to talk this through?",
+    "ctaBody": "Our engineers are happy to discuss how this applies to your organization."
   },
   "about": {
     "hero": {
-      "badge": "About Us",
-      "title": "We Are",
-      "titleHighlight": "Neuve Labs",
-      "subtitle": "Based in UAE since 2025, Neuve Labs combines fresh perspective with proven expertise. Our team has delivered 500+ projects across multiple countries, bringing that experience to help Middle East businesses transform digitally.",
-      "ctaPrimary": "Start a Project",
-      "ctaSecondary": "View Our Work"
-    },
-    "stats": {
-      "projectsDelivered": "Projects Delivered",
-      "globalReach": "Countries Served",
-      "technologyPartnerships": "Tech Partnerships",
-      "clientSatisfaction": "Client Retention"
+      "label": "About",
+      "title": "An engineering consultancy built on more than 500 delivered projects.",
+      "lede": "Neuve Labs was founded in the UAE in 2025. Our founding team brings experience from projects across telecoms, finance, healthcare and enterprise, and puts it to work for clients in the Middle East and beyond."
     },
     "story": {
-      "badge": "Our Story",
-      "title": "Building the Future,",
-      "titleHighlight": "One Project at a Time",
-      "paragraph1": "Neuve Labs was established in 2025 in UAE as a dedicated IT consulting company serving the Middle East market. Our founding team brings hands-on experience from delivering 500+ successful projects across telecommunications, finance, healthcare, and enterprise sectors.",
-      "paragraph2": "We've worked with clients across UAE, Oman, Singapore, India, Netherlands, and Belgium, and maintain strategic partnerships with US-based technology companies. This global exposure informs our approach to solving local challenges.",
-      "paragraph3": "We believe technology should solve real problems, not create new ones. That's why we focus on practical, scalable solutions that deliver measurable results. From startups to enterprises, we partner with organizations to implement AI, cloud, product development, and automation solutions that work."
+      "label": "Our story",
+      "title": "Practical technology, delivered properly.",
+      "paragraphs": [
+        "We set up Neuve Labs in Ras Al Khaimah as a consultancy for the Middle East market. Before that, our team delivered more than 500 projects in telecommunications, financial services, healthcare and enterprise software.",
+        "We have worked with clients in the UAE, Oman, Singapore, India, the Netherlands, Belgium and Australia, and with technology partners in the United States. That range shapes how we approach local problems.",
+        "We think technology should solve problems, not create new ones. So we favor practical, maintainable solutions with results you can measure, whether the client is a startup or a large enterprise."
+      ]
     },
-    "capabilities": {
-      "ai": {
-        "title": "AI & Machine Learning",
-        "description": "Practical AI solutions that automate processes and improve decision-making"
-      },
-      "cloud": {
-        "title": "Cloud Engineering",
-        "description": "Cloud infrastructure and migration services for modern businesses"
-      },
-      "enterprise": {
-        "title": "Enterprise Solutions",
-        "description": "Custom software development and enterprise application modernization"
-      },
-      "partnerships": {
-        "title": "Global Network",
-        "description": "Partnerships with international technology providers and consultancies"
-      }
+    "facts": {
+      "projects": "Projects delivered by our team",
+      "countries": "Countries served",
+      "partnerships": "Technology partnerships",
+      "retention": "Client retention"
     },
     "values": {
-      "badge": "Our Values",
-      "title": "How We Work",
-      "subtitle": "The principles that guide every project and partnership we undertake.",
-      "innovation": {
-        "title": "Practical Innovation",
-        "description": "We apply proven technologies creatively to solve your specific business challenges."
-      },
-      "clientSuccess": {
-        "title": "Client Success",
-        "description": "Your business outcomes are our measure of success. We build solutions that deliver ROI."
-      },
-      "peopleCentric": {
-        "title": "Collaborative Approach",
-        "description": "We work alongside your team, ensuring knowledge transfer and sustainable solutions."
-      },
-      "integrity": {
-        "title": "Honest Partnership",
-        "description": "We provide realistic timelines, transparent pricing, and straightforward communication."
-      }
+      "label": "How we work",
+      "title": "Four principles behind every engagement.",
+      "items": [
+        {
+          "title": "Practical innovation",
+          "body": "We apply proven technology creatively to your specific problem, rather than chasing trends."
+        },
+        {
+          "title": "Client outcomes",
+          "body": "We measure success by your results: revenue, cost, time saved or risk reduced."
+        },
+        {
+          "title": "Working alongside you",
+          "body": "We work with your team and transfer knowledge, so the solution lasts after we leave."
+        },
+        {
+          "title": "Straight answers",
+          "body": "Realistic timelines, transparent pricing and clear communication, including when the news is not good."
+        }
+      ]
     },
-    "global": {
-      "badge": "Our Reach",
-      "title": "Serving Clients Across",
-      "titleHighlight": "Multiple Regions",
-      "description": "Headquartered in UAE with delivery capabilities across Asia, Middle East, Europe, and beyond. Our reach spans UAE, Oman, India, Singapore, Australia, Netherlands, Belgium, and strategic US partnerships.",
+    "reach": {
+      "label": "Reach",
+      "title": "Based in the UAE, delivering across four continents.",
+      "lede": "Our headquarters are in Ras Al Khaimah, with an engineering center in Kochi, India. We serve clients across the Middle East, Asia, Europe and Australia.",
+      "hq": "Office",
       "locations": {
-        "rak": "RAK, UAE",
+        "rak": "Ras Al Khaimah, UAE",
         "kochi": "Kochi, India",
         "oman": "Oman",
         "singapore": "Singapore",
         "australia": "Australia",
-        "belgium": "Belgium",
         "netherlands": "Netherlands",
+        "belgium": "Belgium",
         "usa": "United States"
       }
-    },
-    "cta": {
-      "title": "Ready to start your project?",
-      "description": "Let's discuss how we can help solve your technology challenges.",
-      "buttonText": "Start a Conversation"
     }
   },
-  "insights": {
-    "hero": {
-      "badge": "Insights",
-      "title": "Latest",
-      "titleHighlight": "Insights",
-      "description": "Case studies, technical guides, and perspectives from our team on AI, cloud, and digital transformation."
+  "contact": {
+    "label": "Contact",
+    "title": "Tell us about your project.",
+    "lede": "Share a few details and the right person on our team will get back to you. If you prefer, write to us directly.",
+    "direct": {
+      "email": "Email",
+      "phone": "Phone",
+      "office": "Office",
+      "officeValue": "RAK Free Zone, Ras Al Khaimah, United Arab Emirates"
     },
-    "filters": {
-      "all": "All",
-      "caseStudies": "Case Studies",
-      "articles": "Articles"
-    },
-    "newsletter": {
-      "badge": "Stay Updated",
-      "title": "Get Updates Delivered",
-      "description": "Subscribe for practical insights on AI, security, and automation in the UAE & GCC market.",
-      "placeholder": "your@email.com",
-      "button": "Subscribe",
-      "privacy": "We respect your privacy. Unsubscribe at any time."
-    },
-    "cta": {
-      "viewCaseStudy": "View Case Study",
-      "readArticle": "Read Article"
+    "form": {
+      "title": "Project enquiry",
+      "name": "Full name",
+      "email": "Work email",
+      "company": "Company",
+      "phone": "Phone",
+      "message": "What are you working on?",
+      "messageHint": "A few sentences on the problem, timeline and anything we should know.",
+      "optional": "Optional",
+      "submit": "Send enquiry",
+      "sending": "Sending…",
+      "success": "Thank you. Your message has been sent and we will be in touch shortly.",
+      "error": "Something went wrong. Please try again, or email us directly.",
+      "privacy": "We only use these details to reply to your enquiry."
     }
   },
-  "caseStudies": {
-    "category": "Case Study",
-    "backToInsights": "Back to Insights",
-    "challenge": "Challenge",
-    "solution": "Solution",
-    "results": "Results & Impact",
-    "techStack": "Technology Stack",
-    "builtWith": "Technologies Used",
-    "readyToTransform": "Facing a Similar Challenge?",
-    "letsDiscuss": "Let's discuss how we can help you achieve similar results.",
-    "startProject": "Start Your Project",
-    "industrialAi": {
-      "title": "AI Document Intelligence: Transforming Technical Knowledge Search",
-      "description": "How we built an AI-powered search system that reduced document lookup time by 90% for a telecommunications team managing thousands of technical specifications.",
-      "industry": "Telecommunications"
-    },
-    "hyperlocalBusiness": {
-      "title": "Hyperlocal Business Platform: Connecting Communities Digitally",
-      "description": "A platform connecting local businesses, service providers, and customers, enabling digital commerce at the grassroots level.",
-      "industry": "Digital Services"
-    },
-    "educationalCounseling": {
-      "title": "Student Support System: Streamlining Counseling Operations",
-      "description": "A counseling management platform that streamlined operations for an international school system, managing 1000+ student cases efficiently.",
-      "industry": "Education"
-    },
-    "multiTierLoyalty": {
-      "title": "Enterprise Loyalty Platform: Scaling Rewards Programs",
-      "description": "A loyalty system handling 35,000 daily transactions for 5,000 concurrent users with gamification and intelligent point management.",
-      "industry": "Retail"
-    },
-    "digitalBusinessIdentity": {
-      "title": "Digital Business Cards: Modern Corporate Networking",
-      "description": "A digital business card platform with QR sharing and engagement analytics, replacing paper cards with actionable insights.",
-      "industry": "Corporate Services"
-    },
-    "familyConnection": {
-      "title": "Family Platform: Multi-Generational Connection",
-      "description": "A family management platform combining genealogy, financial management, and community features for extended family networks.",
-      "industry": "Community"
-    }
+  "footer": {
+    "description": "AI and IT consultancy in the United Arab Emirates. We design, build and run software for organizations across the Middle East, Asia, Europe and Australia.",
+    "services": "Services",
+    "company": "Company",
+    "contact": "Contact",
+    "location": "RAK Free Zone, United Arab Emirates",
+    "rights": "All rights reserved."
   },
-  "digitalEngineering": {
-    "hero": {
-      "badge": "Digital Engineering",
-      "title": "Digital",
-      "titleHighlight": "Engineering",
-      "description": "We design, build, and deploy technology solutions that help businesses operate more efficiently and compete effectively."
-    },
-    "services": {
-      "aiMl": {
-        "title": "AI & Machine Learning",
-        "description": "From predictive analytics to natural language processing, we build AI solutions that automate decisions and surface insights from your data.",
-        "cta": "Explore Solutions"
-      },
-      "cloudEngineering": {
-        "title": "Cloud Engineering",
-        "description": "Modernize your infrastructure with cloud-native architecture. We handle migrations, optimize costs, and build for reliability at scale.",
-        "cta": "Explore Solutions"
-      },
-      "dataEngineering": {
-        "title": "Data Engineering",
-        "description": "Build robust data pipelines that turn raw data into business insights. Modern architecture for analytics, reporting, and ML workloads.",
-        "cta": "Explore Solutions"
-      },
-      "productEngineering": {
-        "title": "Product Engineering",
-        "description": "End-to-end product development from concept to launch. Web, mobile, and enterprise applications built for real users.",
-        "cta": "Explore Solutions"
-      },
-      "dataAnalytics": {
-        "title": "Data Analytics",
-        "description": "Business intelligence dashboards, reporting systems, and analytics platforms that help you make data-driven decisions.",
-        "cta": "Explore Solutions"
-      },
-      "enterpriseSoftware": {
-        "title": "Enterprise Software",
-        "description": "Custom enterprise applications, system integrations, and legacy modernization. Built to fit your processes, not the other way around.",
-        "cta": "Explore Solutions"
-      }
-    },
-    "cta": {
-      "title": "Ready to Build?",
-      "description": "Let's discuss how our engineering team can help with your next project.",
-      "buttonText": "Start Your Project"
-    }
-  },
-  "specialistServices": {
-    "hero": {
-      "badge": "Specialist Services",
-      "title": "Specialist",
-      "titleHighlight": "Services",
-      "description": "Focused expertise in high-impact areas. We combine deep technical knowledge with practical delivery experience."
-    },
-    "services": {
-      "aiEngineering": {
-        "title": "AI Engineering",
-        "description": "Build production-ready AI systems. From model development to deployment, monitoring, and MLOps infrastructure.",
-        "cta": "Learn More"
-      },
-      "cyberSecurity": {
-        "title": "Cyber Security",
-        "description": "Security assessments, compliance implementation, threat monitoring, and incident response planning.",
-        "cta": "Learn More"
-      },
-      "processAutomation": {
-        "title": "Process Automation",
-        "description": "Identify and automate repetitive processes with RPA and AI-powered solutions that reduce manual work.",
-        "cta": "Learn More"
-      }
-    },
-    "whyUs": {
-      "badge": "Why Us",
-      "title": "Local expertise with",
-      "titleHighlight": "global standards",
-      "description": "We understand the UAE market and regulatory environment while applying international best practices to every engagement.",
-      "regulatoryAlignment": {
-        "title": "Regulatory Compliance",
-        "description": "Experience with UAE Central Bank, NESA, and ADGM requirements built into our delivery approach."
-      },
-      "coCreation": {
-        "title": "Knowledge Transfer",
-        "description": "We work alongside your team to build internal capabilities, not just deliverables."
-      },
-      "focusAreas": {
-        "title": "Focus Areas",
-        "items": [
-          "AI-powered process automation & analytics",
-          "Security assessments & compliance programs",
-          "GenAI applications & intelligent assistants",
-          "Enterprise architecture & modernization",
-          "Cloud migration & DevOps implementation"
-        ]
-      }
-    },
-    "cta": {
-      "title": "Need Specialized Help?",
-      "description": "Let's discuss how our specialist services can address your specific challenges.",
-      "buttonText": "Start a Conversation"
-    }
+  "notFound": {
+    "label": "Error 404",
+    "title": "We could not find that page.",
+    "body": "It may have moved, or the link may be wrong. Try one of these instead.",
+    "home": "Back to the homepage"
   }
 }

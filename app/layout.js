@@ -1,114 +1,76 @@
-import { Manrope, Orbitron, JetBrains_Mono } from "next/font/google";
+import { IBM_Plex_Sans, IBM_Plex_Serif, IBM_Plex_Mono, IBM_Plex_Sans_Arabic } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getLocale } from "next-intl/server";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import "./globals.css";
-import { siteConfig, generateMetadata as generateSiteMetadata } from "@/lib/metadata";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ThemeProvider from "@/components/providers/ThemeProvider";
+import { buildMetadata, organizationSchema } from "@/lib/metadata";
+import Header from "@/components/site/Header";
+import Footer from "@/components/site/Footer";
 
-const manrope = Manrope({
+const plexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-manrope",
+  weight: ["400", "500", "600"],
+  variable: "--font-plex-sans",
   display: "swap",
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
 
-const orbitron = Orbitron({
+const plexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
-  variable: "--font-orbitron",
+  weight: ["400", "500"],
+  variable: "--font-plex-serif",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  variable: "--font-jetbrains",
+  weight: ["400"],
+  variable: "--font-plex-mono",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
 });
 
-export const metadata = generateSiteMetadata({
-  title: siteConfig.name,
-  description: siteConfig.description,
+const plexArabic = IBM_Plex_Sans_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "500", "600"],
+  variable: "--font-plex-arabic",
+  display: "swap",
 });
+
+export async function generateMetadata() {
+  const t = await getTranslations("meta");
+  return buildMetadata({ description: t("description") });
+}
+
+export const viewport = {
+  themeColor: "#ffffff",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export default async function RootLayout({ children }) {
   const locale = await getLocale();
   const messages = await getMessages();
-  const isRTL = locale === "ar";
+  const t = await getTranslations("nav");
+  const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
     <html
       lang={locale}
-      dir={isRTL ? "rtl" : "ltr"}
-      className={`${manrope.variable} ${orbitron.variable} ${jetbrainsMono.variable} dark`}
-      data-theme="dark"
-      suppressHydrationWarning
+      dir={dir}
+      className={`${plexSans.variable} ${plexSerif.variable} ${plexMono.variable} ${plexArabic.variable}`}
     >
-      <head>
-        <link rel="icon" href="/logo-title.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/logo-title.svg" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  const stored = localStorage.getItem('theme-storage');
-                  if (stored) {
-                    const parsed = JSON.parse(stored);
-                    if (parsed.state?.theme) {
-                      document.documentElement.setAttribute('data-theme', parsed.state.theme);
-                      document.documentElement.classList.add(parsed.state.theme);
-                      return;
-                    }
-                  }
-                  document.documentElement.setAttribute('data-theme', 'dark');
-                  document.documentElement.classList.add('dark');
-                } catch (e) {
-                  document.documentElement.setAttribute('data-theme', 'dark');
-                  document.documentElement.classList.add('dark');
-                }
-              })();
-            `,
-          }}
-        />
+      <body>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Neuve Labs Technology",
-              url: siteConfig.url,
-              logo: `${siteConfig.url}/logo1.svg`,
-              description: siteConfig.description,
-              address: {
-                "@type": "PostalAddress",
-                addressCountry: "AE",
-                addressRegion: "UAE",
-              },
-              sameAs: [
-                siteConfig.links.twitter,
-                siteConfig.links.linkedin,
-              ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "Customer Service",
-                areaServed: "AE",
-                availableLanguage: ["en", "ar"],
-              },
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }}
         />
-      </head>
-      <body className={`${manrope.variable} font-sans antialiased bg-background text-foreground`}>
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider>
-            <Header />
-            <main className="min-h-screen">{children}</main>
-            <Footer />
-          </ThemeProvider>
+        <a className="skip-link" href="#main">
+          {t("skip")}
+        </a>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Header />
+          <main id="main" tabIndex={-1}>
+            {children}
+          </main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

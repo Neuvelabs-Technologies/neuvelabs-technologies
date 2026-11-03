@@ -1,40 +1,24 @@
 import { siteConfig } from "@/lib/metadata";
+import { services, serviceGroups } from "@/lib/content/services";
+import { industries } from "@/lib/content/industries";
+import { caseStudies } from "@/lib/content/caseStudies";
+import { articles } from "@/lib/content/articles";
 
 export default function sitemap() {
-  const baseUrl = siteConfig.url;
-
-  const routes = [
-    "",
-    "/about",
-    "/digital-engineering",
-    "/digital-engineering/ai-ml",
-    "/digital-engineering/cloud-devops",
-    "/digital-engineering/data-analytics",
-    "/digital-engineering/enterprise-software",
-    "/specialist-services",
-    "/industries",
-    "/insights",
-    "/contact",
-    "/industries/healthcare",
-    "/industries/finance-banking",
-    "/industries/retail-ecommerce",
-    "/industries/manufacturing",
-    "/industries/real-estate",
-    "/industries/education",
-    // Case Studies
-    "/insights/industrial-ai-document-intelligence",
-    "/insights/hyperlocal-business-network",
-    "/insights/educational-counseling-system",
-    "/insights/multi-tier-loyalty-platform",
-    "/insights/digital-business-identity-suite",
-    "/insights/family-connection-platform",
+  const staticRoutes = ["", "/services", "/industries", "/insights", "/about", "/contact"];
+  const entries = [
+    ...staticRoutes.map((path) => ({ path, priority: path === "" ? 1 : 0.8, changeFrequency: "monthly" })),
+    ...Object.values(serviceGroups).map((g) => ({ path: g.path, priority: 0.8 })),
+    ...services.map((s) => ({ path: s.path, priority: 0.7 })),
+    ...industries.map((i) => ({ path: `/industries/${i.slug}`, priority: 0.6 })),
+    ...caseStudies.map((c) => ({ path: `/insights/${c.slug}`, priority: 0.6, lastModified: c.date })),
+    ...articles.map((a) => ({ path: `/insights/${a.slug}`, priority: 0.5, lastModified: a.date })),
   ];
 
-  return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : 0.8,
+  return entries.map(({ path, priority, changeFrequency = "yearly", lastModified }) => ({
+    url: `${siteConfig.url}${path}`,
+    lastModified: lastModified ? new Date(lastModified) : new Date(),
+    changeFrequency,
+    priority,
   }));
 }
-
