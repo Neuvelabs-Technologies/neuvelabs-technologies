@@ -1016,7 +1016,8 @@ svg {
 .marquee {
   direction: ltr; /* logos only; keeps the loop maths simple in RTL */
   overflow: hidden;
-  padding-block: clamp(1.5rem, 3vw, 2.5rem);
+  margin-block-start: clamp(2rem, 4vw, 3.5rem);
+  padding-block: 0.5rem;
   mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
 }
@@ -1031,32 +1032,44 @@ svg {
   animation-play-state: paused;
 }
 
-
-.marquee__group {
+.marquee .marquee__group {
   display: flex;
   align-items: center;
-  gap: clamp(3rem, 6vw, 5.5rem);
-  padding-inline-end: clamp(3rem, 6vw, 5.5rem);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  padding-inline-end: clamp(2.5rem, 5vw, 4.5rem);
   list-style: none;
   margin: 0;
 }
 
 .marquee__logo {
   display: flex;
+  flex: none;
   align-items: center;
-  height: clamp(2.5rem, 4vw, 3.5rem);
+  height: 4.5rem;
 }
 
+.marquee__logo a {
+  display: block;
+  line-height: 0;
+}
+
+/* Each logo's height comes from lib/content/site.js (set by eye). */
 .marquee__logo img {
-  height: 100%;
+  display: block;
+  height: var(--logo-h, 2.5rem);
   width: auto;
-  max-width: 10rem;
+  max-width: 9.5rem;
   object-fit: contain;
-  opacity: 0.88;
+  opacity: 0.9;
   mix-blend-mode: multiply;
-  transition:
-    filter var(--ui),
-    opacity var(--ui);
+  transition: opacity var(--ui);
+}
+
+@media (max-width: 640px) {
+  .marquee__logo img {
+    height: calc(var(--logo-h, 2.5rem) * 0.8);
+    max-width: 7.5rem;
+  }
 }
 
 .marquee__logo img[data-darken="true"] {

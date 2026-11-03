@@ -14,7 +14,12 @@ function Group({ hidden = false }) {
           >
             {/* Plain img: logos are small, mixed formats, and already optimized. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={c.logo} alt={hidden ? "" : c.name} loading="lazy" data-darken={c.darken || undefined} />
+            <img
+              src={c.logo}
+              alt={hidden ? "" : c.name}
+              data-darken={c.darken || undefined}
+              style={{ "--logo-h": `${c.size}rem` }}
+            />
           </a>
         </li>
       ))}
